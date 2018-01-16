@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+           
+        div 
+        {
+        margin :0;
+        }
+		   
+		body
+        {
+        background-image : url("Images/about.jpg");
+		width: 100%;
+        height: 720px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0px;
+		   
+        background-size: cover;
+        background-repeat: no-repeat;
+		}
+        .textwrapp {
+        width: 25em; 
+        word-wrap: break-word;
+        }
+            
+	address{
+		width: 80px;
+		height: 80px;
+        padding-left: 100px; 		
+		position: relative; 
+		animation: mymove 4s infinite;
+	}
+    
+	@keyframes mymove {
+		0%   {top: 0px;}
+		25%  {top: 10px;}
+		75%  {top: 0px}
+		100% {top: 10px;}
+	}
+                 
+    .teksti{
+    
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid; 
+    column-rule-width: 1px;
+    font-size: 30px;   
+    }
+    </style>
+        
+        <title> About</title>
+        <h1 align="center" > <font size="15">  About </font> </h1>
+    </head>
+<body>
+        <script>
+                window.alert("Copyrights reserved");
+                </script>
+
+<div class="teksti">
+<p>  A Prishtina-based restaurant management company specializing 
+in creating and operating upscale,
+ innovative restaurant concepts, led by Founder and award-winning Chef Ed Gelebus. </p>
+
+
+<p> Operating since 2005, Flavour is one of the finest restaurants in the Balkans.
+ At Flavour Group, impeccable service is not just our ideal, it is ingrained in everything we do. 
+Rooted deep in our foundation is a selflessness and flexibility that is reflected in an experience wholly centered on others.
+ By embodying our values of adaptability and fluidity, we cultivate a whole new sense of hospitality that is the one thing that makes us the best restaurant in region.</font></center></p>
+ <p><center> <font size="5"> The <a href="HOMEPAGE.html" > Contact  </a>   informations</p>
+    <p id="demo"></p>
+<!--FUNCTION-->
+<script>
+var punoi = ["Melos", "Lirak", "Rilind", "Leart"];
+document.getElementById("demo").innerHTML = punoi.toString();
+</script>
+<p id="demo"></p>
+
+<script>
+var faqja = {
+    Emri : "Flavour",
+    Lloji  : "restaurant",
+    puntoret       : 6,
+      
+};
+
+document.getElementById("demo").innerHTML =
+faqja.Emri + " is a " + faqja.Lloji +" that has "+faqja.puntoret+" employees";
+</script>
+<p id="demo3"></p>
+<!--FUNCTION-->
+<script>
+var x = funksioni(2, 3, 1);
+document.getElementById("demo3").innerHTML = "We serve for "+x+" years.";
+
+function funksioni(a, b,c) {
+    return a * b * c;
+}
+</script>
+<p id="demo2"></p>
+<script>
+
+        var emri = "Guzman";
+        funksionglobal();
+        
+        function funksionglobal() {
+            document.getElementById("demo2").innerHTML =
+            "Flavour's chef is " + emri;
+        }
+</script>
+        <p id="demo1"></p>
+        <!--FUNCTION-->
+         <script>
+                var x = funksioni(5, 3, 1);
+                document.getElementById("demo1").innerHTML = "You can found us in "+x+" locations";
+                
+                function funksioni(a, b,c) {
+                    return a * b * c;
+                }
+             </script>
+  
+
+        
+</div>
+<!--ADDRESS-->
+<address>
+        <dl>  
+       <dt>Visit us at:</dt>  <br>
+        
+        <dd><a href="https://www.google.com/maps/@42.648751,21.1694698,17z">Bregu i Diellit, Prishtinë</a> </dd><br>
+        <dd><abbr title="Republika e Kosoves">RKS</abbr> </dd>
+        </dl>
+    </address>
+    <video  style="float:right;" width="400" height="320" controls>
+            <source src="Images/Flavour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    
+
+</body>
+
+
+
+</html>

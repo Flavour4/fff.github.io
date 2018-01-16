@@ -1,0 +1,81 @@
+body
+{
+  background-image: url(Images/fork.jpg), url(Images/knife.jpg), url(Images/gota.jpg),url(Images/shampanje.jpg);
+  background-position: right top, left top, right bottom, left bottom;
+  background-size: 400px 400px;
+  background-repeat: no-repeat;
+  
+
+  
+}
+
+.menu-body {
+  max-width: 680px;
+  margin: 0 auto;
+  display: block;
+  color: rgb(92, 92, 92);
+
+  
+}
+
+.menu-section {
+  margin-bottom: 80px;
+
+}
+
+.menu-section-title {
+  
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+  border:  solid;
+  border-style: double ;
+  border-width: medium; 
+  border-radius: 25px;
+  border-image: url(Images/border.png) 30 round;
+}
+
+.menu-section-title1 {
+  font-family: georgia;
+  font-size: 50px;
+  display: block;
+  font-weight:normal;
+  margin: 20px 0; 
+  text-align: Center;
+  border:  solid;
+  border-style: double ;
+  border-width: medium; 
+  border-radius: 25px;
+  border-image: url(Images/border.png) 30 round;
+
+}
+
+.menu-item {
+
+  margin: 35px 0;
+  font-size: 18px;
+
+}
+
+.menu-item-name{
+  font-family: helvetica;
+  font-weight: bold;
+  border-bottom: 2px dotted rgb(213, 213, 213);
+}
+
+.menu-item-description {
+  font-style: italic;
+  font-size: .9em;
+  line-height: 1.5em;
+}
+
+.menu-item-price{
+  float: right;
+  font-weight: bold;
+  font-family: arial;
+  margin-top: -22px;
+}
+

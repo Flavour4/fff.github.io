@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="CSSchef.css">
+        
+        <title>Chefs</title>
+    </head>
+<body>
+        <h1 style="text-align:center; background-color:blue; color:white">Chefs</h1>
+    <h1 class="edglebus">Ed Glebus - Executive Chef</h1>
+      
+<p style="float: left;"><img src="Images/chef1.jpg" height="400" width="400" ></p>
+   
+   
+   
+    <pre class="text1" style="font-family:Arial, Helvetica, sans-serif; color:brown"> 
+Passion for cooking is in Ed's genes. His grandmother was a successful 
+ restaurateur in Massachusetts and Ed grew up appreciating outstanding food
+ and service  at an early age.
+            
+Ed is influenced by the farm-to-table concept of harvesting natural 
+ ingredients at their  peak and helping them shine through the use of 
+ classical cooking techniques. He has previously held many management 
+ positions, including General Manager at CulinArt, overseeing food and beverages
+ for Qualcomm.
+
+Ed holds the prestigious Certified Executive Chef certification from the American 
+Culinary Federation (ACF).He has medaled several times in ACF hot food competitions
+(including gold) and was recently inducted into the prestigious Le Chaîne des 
+Rôtisseurs Society. Ed, classically trained in Italy's Slow Food cooking techniques,
+ aims to delight the campus community each day with delicious and nutritious offerings
+ 
+ <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">For more contact him</a>
+ <p id="demo2"></p>
+
+ <!--KLASA(OBJEKTI) PERSON-->
+ <script>
+     function Person(first, last, age, eye) {
+         this.firstName = first;
+         this.lastName = last;
+         this.age = age;
+         this.eyeColor = eye;
+     }
+     
+     var chef = new Person("Ed", "Glebus", 20, "black");
+     document.getElementById("demo2").innerHTML =
+     "Chef "+ chef.firstName+" is " + chef.age +" years old."; 
+     </script>
+ </pre>
+ 
+
+
+
+<h1 class="edglebus">Jessica Wylie - Senior Pastry Chef</h1>
+
+        <p style="float: left;"><img src="Images/chef2.jpg" height="400" width="400" ></p>
+        <pre  class="text1" style="font-family:Arial, Helvetica, sans-serif; color:brown"> 
+
+ Jessica Wylie is the Executive Pastry Chef of the SDSU Dining Bakeshop.
+Trained in the classical style by an Austrian Master Pastry Chef, Jessica
+started with SDSU Dining in 1997 as a scratch baker and quickly transformed
+the bakeshop with her innovative pastry recipes.
+                
+ Jessica says the highlight of her job is student satisfaction. 
+“I like to make people happy,” she says. “Hearing from someone that they 
+really enjoyed our latest croissant? That’s all I need.”
+                
+ A San Diego native, Jessica has been involved in the local culinary scene
+for over 25 years. Using all natural ingredients and classical methods, 
+Jessica is committed to bringing the best quality products to SDSU.
+
+<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">For more contact her</a>
+</pre>
+<p id="demo3"></p>
+
+<script>
+    function Person1(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    
+    var chef = new Person1("Jessica", "Wylie", 20, "brown");
+    document.getElementById("demo3").innerHTML =
+    "Chef "+ chef.firstName+" is " + chef.age +" years old."; 
+    </script>
+<!--TIME-DEPENDANT BACKGROUND-->
+<script type="text/javascript">
+    var currentTime = new Date().getHours();
+    if (7 <= currentTime && currentTime < 17) {
+        if (document.body) {
+            document.body.background = "Images/daytime.jpg";
+
+        }
+    }
+    else {
+        if (document.body) {
+            document.body.background = "Images/nighttime.jpg";
+            
+        }
+    }
+    </script>
+    
+
+</pre>
+<h1 class="edglebus">Saul Lopez - Culinary Chef</h1>
+        <p style="float: left;"><img src="Images/chef5.jpg" height="400" width="400" ></p>
+        <pre  style="font-family:Arial, Helvetica, sans-serif; color:brown">
+
+ Saul started his culinary journey at 17 as a dishwasher at IHOP, worked his 
+way up to cook, and felt inspired to attend culinary school, where he graduated
+at the top of his class. Through his work, he learned the importance of
+‘mise en place’, a French culinary phrase which means ‘everything in its place’,
+and dedicated himself to becoming a lifelong learner in the culinary world.
+                
+ From catering work to running a restaurant, Saul has now turned his focus to
+sustainability and adapting classical techniques to embrace the ‘modern kitchen’.
+He helped open UTK, and is now Chef de Cuisine at The Garden. His love of healthy
+living and fresh ingredients straight from our garden serves as constant inspiration
+for his menu ideas and daily specials.
+
+<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">For more contact him</a>
+<p id="demo4"></p>
+
+<script>
+    function Person1(first, last, age, eye) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eye;
+    }
+    
+    var chef = new Person1("Saul", "Lopez", 22, "brown");
+    document.getElementById("demo4").innerHTML =
+    "Chef "+ chef.firstName+" is " + chef.age +" years old."; 
+    </script></pre>
+<p id="demo"></p>
+<!--IF-ELSE STATEMENT-->
+<script>
+    var ora = new Date().getHours(); 
+    var incharge;
+    if (ora < 18) {
+        incharge = "Saul Lopez";
+    } else {
+        incharge = "Guzman";
+    }
+    document.getElementById("demo").innerHTML ="Incharge is "+incharge;
+
+</script>              
+                
+            
+    
+
+
+
+    
+
+</body>
+</html>

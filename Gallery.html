@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <title>Gallery</title>
+    
+</head>
+<body>
+        <canvas id="myCanvas" width="1325" height="100" style="border:1px solid blue;">
+            </canvas> 
+            <script>
+            //GRADIENTI LINEAR   
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+            ctx.font = "40px myFirstFont";
+            ctx.fillText("G a l l e r y",600,50);
+        
+         
+            var grd = ctx.createLinearGradient(0,0,550,0);
+            grd.addColorStop(0,"rgb(0, 204, 255)");
+            grd.addColorStop(1,"white");
+        
+            
+            ctx.fillStyle = grd;
+            ctx.fillRect(0,0,550,100);
+        
+             var grd2 = ctx.createLinearGradient(850,0,1350,0);
+            grd2.addColorStop(1,"rgb(0, 204, 255)");
+            grd2.addColorStop(0,"white");
+        
+            ctx.fillStyle = grd2;
+            ctx.fillRect(820,0,1000,100);
+        
+            
+        
+            </script> 
+    
+    <figure>
+        <div>
+            <p style="font-size:30px;text-transform: uppercase;text-align:center">___________________M a i n    D i s h___________________</p>
+            <img src="Images/maindish.jpg" alt="maindish" width="300" height="200" >
+            <img src="Images/Pizza.jpg"  alt="cuisine"  width="300" height="200" >
+            <img src="Images/pjata1.jpg"  alt="pjata1"  width="300" height="200" >
+            <img src="Images/pjata2.jpg"  alt="pjata2"  width="300" height="200" >
+        </div>
+        <div>
+            <p style="font-size:30px;text-align:center;text-transform: uppercase;">___________________S a l a d s___________________</p>
+        </div>
+        
+        <img src="Images/salata1.jpg"  alt="pjata3"  width="300" height="200" >
+        <img src="Images/salata2.jpg"  alt="pjata4"  width="300" height="200" >
+        <img src="Images/salata3.jpg"  alt="pjata5"  width="300" height="200" >
+        <img src="Images/salata4.jpg"  alt="pjata6"  width="300" height="200" >
+        <div>
+            <p style="font-size:30px;text-align:center;text-transform: uppercase;">___________________D e s s e r t s___________________</p>
+        </div>
+        <img src="Images/dessert1.jpg"  alt="pjata7"  width="300" height="200" >
+        <img src="Images/dessert2.jpg"  alt="pjata8"  width="300" height="200" >
+        <img src="Images/dessert3.jpg"  alt="pjata9"  width="300" height="200" >
+        <img src="Images/dessert4.jpg"  alt="pjata10"  width="300" height="200">
+        
+        
+    </figure>
+   
+    
+      
+    
+</body>
+</html>

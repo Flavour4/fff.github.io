@@ -1,0 +1,49 @@
+#chef2
+{
+    padding-left: 150px;
+    
+}
+ul{
+    display: inline-block;
+}
+li a{
+    display: inline-block;
+    text-align: center;
+}
+pre{
+    font-size: 20px;
+}
+brothers
+{
+    float: left;
+}
+figure{
+    margin-left: 100px;
+
+}
+#chef3 {
+    padding-left: 150px;
+}
+.edglebus{
+    color: white;
+    background-color:black;
+}
+.photo1
+{
+    float: left;
+}
+#row{
+    background-color: grey;
+}
+.hahaha{
+    background-image: url("Images/InsideRestaurant.jpg");
+    padding-bottom: 120px;
+}
+.text1{
+    padding-bottom: 200px;
+}
+body{
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

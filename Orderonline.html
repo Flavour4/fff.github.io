@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <script type="text/javascript" src="jquery.js"></script>
+    <title> ORDER ONLINE</title>
+    <style>
+        body
+        {
+            background-image: url("Images/order.jpg");
+        }
+        div 
+        {
+            width: 300px;
+            height: 100px;
+            background-color:orange;
+            border: 1px solid black;
+        }
+        div#myDiv
+        {
+            transform: skew(20deg,10deg); 
+        }
+        div#myDiv1
+        {
+            transform: rotate(-10deg);
+        }
+        div#myDiv2
+        {
+            transform: scale(1.5, 1);
+        }
+
+        #div1 
+        {
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+</style>
+
+<script>
+    //DRAG AND DROP
+function allowDrop(ev) 
+{
+    ev.preventDefault();
+}
+
+function drag(ev)
+{
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) 
+{
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+ 
+</head>
+<p id="try" style="text-align:center">TRY OUR FOOD!</p>
+<body>
+        <!--JQUERY-->
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('#try').hide(5000, AlertFunction);
+            }); 
+             
+              function AlertFunction()
+              {
+                  alert("YOU ARE ABOUT TO ORDER ONLINE FOOD!");
+              }
+            </script>
+        
+<fieldset style="margin:10%;">
+    <legend>ORDER ONLINE</legend>
+
+
+        <form name="myForm" action="/action_page.php" method="get" autocomplete="off">
+            <div style="float:right;margin-right:180px">
+                <div id="myDiv2"style="text-align:center;font-size:30px">
+                        ARE YOU HUNGRY?
+                        </div>
+                        <div id="myDiv" style="text-align:center;font-size:30px">
+                                CHOOSE YOUR FAVOURITE FOOD!
+                                </div>
+                                <div  id="myDiv1"style="text-align:center;font-size:30px">
+                                       WE'LL BRING IT HOME TO YOU!
+                                        </div>
+                                    </div>
+                First name:<br>
+                <input type="text" name="firstname"><br>
+                
+                Tel. number:<br>
+                <input type="text" name="telnumber"><br>
+                
+                Address:<br>
+                <input type="text" name="address"><br>
+                <!--LOCAL STORAGE-->
+                Paypal:<br>
+                <input type="text" id="textfield" name="number" title="Number should contain 20 numbers"><br>
+                <input type="button" value="SAVE" onclick="save()" />
+                <script>
+                function save(){
+                    var fieldValue = document.getElementById('textfield').value;
+                    localStorage.setItem('text',fieldValue)
+                }
+                </script>
+
+                Transport:<br>
+                <input type="radio" name="radio">Express<br>
+                <input type="radio" name="radio">Normal<br>
+                
+                <p id="demo2"></p>
+<script>
+    //IF ELSE
+     var ora = new Date().getHours(); 
+     var vakti;
+     if (ora < 18) 
+     { 
+         vakti = "For this part of day You can order only Breakfast!";
+     } 
+     else
+      {
+         vakti = "For this part of day You can order only Lunch!";
+      }
+    document.getElementById("demo2").innerHTML = vakti;
+                
+</script>
+         
+  
+<p>Please put the size:</p>
+
+<input id="demo" type="text">
+<button type="button" onclick="myFunction()">Show size</button>
+<p id="message"></p>
+<!--TRY CATCH THROW-->
+<script>
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try {
+        if(x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+    
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+</script>
+               
+               
+               Type:<br>
+                <input type="checkbox" name="type">Big Menu<br>
+                <br>
+                <label for="emailAddress">Email(optional)</label><br/>
+                <input name="email" id="emailAddress" type="email" placeholder="user@example.gov"
+                       list="defaultEmails" size="64" maxlength="256" multiple>
+                <br>
+                <p>Where should we bring your food?
+                </p>
+                
+                <button onclick="getLocation()">Show location</button>
+                
+                <p id="lokacion"></p>
+                
+                <script>
+                var x = document.getElementById("lokacion");
+                //GEOLOCATION
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else { 
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+                
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude + 
+                    "<br>Longitude: " + position.coords.longitude;
+                }
+                </script>
+                <!--DROP EVENT EXECUTION-->
+                <p>Prove you are not a Robot. Move the picture!</p> 
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <br>
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img  src="Images/food.jpg" id="drag1"  draggable="true" ondragstart="drag(event)" width="70" height"70">
+                </div>
+
+
+                <p>Tip:</p>
+                <form oninput="x.value=parseInt(a.value)">0
+                    <input type="range" id="a" value="0">10$
+                    
+                    <output name="x" for="a"></output>
+                </form>
+                
+                
+                <!--EMAIL VALIDATION-->
+                <button onclick="validateForm()">Submit</button>
+                <script>
+                 function validateForm()
+                 {
+                        var x=document.forms["myForm"]["email"].value;
+                        var atpos=x.indexOf("@");
+                        var dotpos=x.lastIndexOf(".");
+                     if (atpos<0 || dotpos<atpos+1 || dotpos+1>=x.length)
+                    {
+                        alert("Not a valid E-mail Address!");
+                        return false;
+                    }
+                    else
+                    {
+                        alert("Your order was successful");
+                    }
+                }
+                </script>
+                
+
+</script>
+<!--TIME DEPENDENT TEXT-->
+                <p id="demo"></p>
+                <script>
+                if (new Date().getHours() < 18) {
+                    document.getElementById("demo").innerHTML = "Have a good day!";
+                }
+                else 
+                {
+                    document.getElementById("demo").innerHTML = "Have a good night!";
+                }
+                </script>
+                    </form>
+               
+                <!--HREF-->
+                <h4><a href="loja.html">Relax while your order arrives.</a></h4>
+        
+        </fieldset>
+        
+        
+    
+        
+
+</body>
+</html>

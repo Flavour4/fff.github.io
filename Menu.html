@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Flavour's Menu</title>
+	<link rel="stylesheet" type="text/css" href="menu.css">	
+</head>
+
+
+
+
+
+
+<body>
+		
+		
+	<div class="menu-body">
+			
+	
+		
+		<div class="menu-section">			
+				
+				<h2 class="menu-section-title">MAIN COURSE</h2>
+		
+			
+			<div class="menu-item">
+					
+			
+				<div class="menu-item-name">
+					Ravioli
+				</div>
+				
+				<div class="menu-item-price">
+					$12
+				</div>
+
+				<div class="menu-item-description">
+					lobster,langoustine,salmon,oxalis and wood sorrel
+				</div>
+
+			</div>
+			
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					Cornish Brown crab
+				</div>
+				
+				<div class="menu-item-price">
+					$30
+				</div>
+
+				<div class="menu-item-description">
+                    lovage,lemon thyme,English muffins
+				</div>
+				
+			</div>
+			
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					Pressed foie grass
+				</div>
+
+				<div class="menu-item-price">
+					$5
+				</div>
+
+				<div class="menu-item-description">
+					green apples,turnips,watercress,smoked duck
+				</div>
+
+			</div>
+			
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					Slow cooked egg
+				</div>
+
+				<div class="menu-item-price">
+					$25
+				</div>
+
+				<div class="menu-item-description">
+				   celeriac, Iberico ham,Vin Jaune
+				</div>
+
+			</div>
+			
+			
+		</div>
+		<p id="demo1" style="margin-left:220px"></p>
+		
+		<script>
+		var day;
+		switch (new Date().getDay()) {
+			case 0:
+				day = "Ravioli";
+				break;
+			case 1:
+				day = "Cornish Brown crab";
+				break;
+			case 2:
+				day = "Pressed foie grass";
+				break;
+			case 3:
+				day = "Slow cooked egg";
+				break;
+			case 4:
+				day = "Mac and cheese";
+				break;
+			case 5:
+				day = "Ramstek";
+				break;
+			case  6:
+				day = "Fish";
+		}
+		document.getElementById("demo1").innerHTML = "Today's     main dish is " + day;
+		</script>
+		
+		
+		
+		<div class="menu-section">
+
+			<h2 class="menu-section-title1">DRINKS</h2>
+		
+			<!-- Item starts -->
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					Red Wine
+				</div>
+
+				<div class="menu-item-price">
+					$220
+				</div>
+
+				<div class="menu-item-description">
+					175ml/250ml/500ml/Bottle
+				</div>
+
+			</div>
+			
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					MONTEPULCIANO, ABRUZZO	
+				</div>
+
+				<div class="menu-item-price">
+					$30
+				</div>
+
+				<div class="menu-item-description">
+					Rich black cherry & light oak, medium, spicy & smooth.
+				</div>
+
+			</div>
+		
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					NERO D'AVOLA, SICILIA
+				</div>
+
+				<div class="menu-item-price">
+					$45
+				</div>
+
+				<div class="menu-item-description">
+					NERO D'AVOLA, SICILIA
+				</div>
+
+			</div>
+			
+
+			
+			<div class="menu-item">
+
+				<div class="menu-item-name">
+					MERLOT, SICILIA
+				</div>
+
+				<div class="menu-item-price">
+					$70
+				</div>
+
+				<div class="menu-item-description">
+					Spicy plum & wild berry, medium, soft & juicy.
+				</div>
+
+			</div>
+			
+			
+		</div>
+		
+		
+	</div>	
+	
+              
+	
+</body>
+</html>

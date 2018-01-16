@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css1.css">
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript">
+        //JQUERY
+        $(document).ready(function(){
+            alert("You are about to enter in Flavour Restaurant Web Page!");
+         }); 
+         
+          function AlertFunction()
+          {
+              alert("The headings are now hidden");
+          }
+          
+          $(Headers).click(function(){
+		  $('#flavour').fadeTo(5000,1,function(){
+		  $('#flavour').slideUp();
+		});
+	    });
+          $('Headers.hidden').slideDown();
+          $(Headers).click(function(){
+          $('#flavour').slideToggle();
+        });    
+         </script>
+         
+         <style>
+          .textwrapp
+            {
+                 width:11em; 
+                 border:1px solid #000000;
+                 margin: 20px;  
+            }
+         </style>
+    <title> Flavour </title>
+    
+</head>
+ <body>
+    
+        <div>
+               
+        <nav>
+                
+        <ul>
+                
+            <li><a href=#home id="active"><b>Home</b></a></li>
+            <li><a href="Menu.html"><b>Menu</b></a></li>
+            <li><a href="Gallery.html"><b>Gallery</b></a></li>
+            <li><a href="Chef.html"><b>Chefs</b></a></li>
+            <li><a href="#contact"><b>Contact</b></a></li>
+            <li><a href="Orderonline.html" target="Orderonline"><b>Order Online</b></a></li>
+            <li><a href="About1.html"><b>About</b></a></li>
+            
+        </ul>
+           
+        </nav>
+     </div>
+<header>
+     <h1 style="color:white" id="flavour"><b>Flavour</b></h1>
+     <h2><span style="font-style:Arial;color:white" id="mymove">Restaurant/Caffe/Pub</span></h2>
+</header>
+
+     <h3 id="ourrestaurant">Our Restaurant</h3>
+    <p style="float:right;padding-right:120px;" class="textwrapp"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt eveniet labore neque placeat.</em></p>
+    <img src="Images/restauranti.jpg" alt="Our restaurant" class="pic">
+    <h3>Only The Freshest Food</h3>
+    <p style="float:left;padding-left:120px"class="textwrapp"><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti deserunt eveniet labore neque placeat</em></p>
+    <img src="Images/ushqimi.jpg" alt="Only The Freshest Food" class="pic2">
+
+
+<!--TABELA-->
+<table border="2" cellpadding="5" cellspacing="4" class="tabela">
+        <caption>Opening Hours</caption>
+        <thead>
+           
+        </thead>
+        <tbody>
+            <tr id="row">
+                <td><b>Working Days</b></td>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                
+            </tr>
+            <tr >
+                <td id="row">
+                    <b>Working Hours</b>
+                </td>
+                <td>
+                    <code>08:00-22:00</code>
+                </td>
+                <td>
+                    <code>08:00-22:00</code> 
+                </td>
+                <td>
+                    <code>08:00-22:00</code>
+                </td>
+               
+                <td>
+                    <code>08:00-22:00</code>
+                </td>
+                <td>
+                    <code>08:00-22:00</code>
+                </td>
+                 
+            </tr>
+        
+        </tbody>
+        <tfoot>
+            <tr >
+                <td colspan="9" style="text-align:center;font-size:40px;"><b>We work non stop on Weekend</b></td>
+            </tr>
+        </tfoot>
+</table>
+    
+<div class="blockquote">
+    <pre style="font-size:40px;text-align:center;color:white" >
+        "Food Is Our
+          COMMON
+          Ground,
+       An Universal
+        Experience"
+    </pre>
+    <address>
+        <dl>  
+       <dt style="color:white">Visit us at:</dt>  <br>
+          <dd><a href="https://www.google.com/maps/@42.648751,21.1694698,17z">Bregu i Diellit, Prishtinë</a> </dd><br>
+          <dd style="color:white"><abbr title="Republika e Kosoves">RKS, &copy FLAVOUR</abbr> </dd>
+        </dl>
+    </address>
+</div>
+ <div id="contact">
+            <ul>
+               <li style="color:white">Contact info:</li>
+                  <ul>
+                        <li style="color:white">IPKO:0038649700700</li>
+                        <li style="color:white;padding-left:20px;">VALA:0037744700700</li>
+                  </ul>
+            </ul> 
+            
+                
+        </div>
+ </body>
+</html>
